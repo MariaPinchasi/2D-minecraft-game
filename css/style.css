@@ -1,0 +1,211 @@
+.loading-page-container{
+    height: 100vh;
+    width: 100vw;
+    background: url(/assets/img/Minecraft-loading-page-cover.jpg) no-repeat center center/cover;
+    flex-direction: column;
+    position: relative;
+}
+#start-btn{
+    margin-top: 30rem;
+}
+
+#start-btn span{
+    position: absolute;
+    right:2rem;
+    top: 1rem;
+    transition: all 1s;
+}
+#start-btn:hover{
+    animation: animate1 1.5s infinite ;
+}
+@keyframes animate1 {
+    50%{
+        background-color:var(--green-color);
+    }
+}
+#start-btn:hover .arrow1{
+    transform: translateX(-2.5rem);
+}
+#start-btn:hover .arrow3{
+    transform: translateX(2.5rem);
+}
+
+#instructions-btn i{
+    position: absolute;
+    right:3rem;
+    top: 2rem;
+}
+
+.instructions{
+    font-size: 4rem;
+    background-color: var(--grey-color);
+    position:absolute;
+    width: 80%;
+    height: 70%;
+    padding: 5rem;
+    text-align: center;
+    line-height: 10rem;
+    /* transform: scale(1.5); */
+    transition: all 1s;
+}
+.close-btn{
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+}
+.close-btn:hover{
+    cursor: pointer;
+}
+.game-page{
+    background-color: var(--dark-color);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    position: relative;
+}
+.main-menu-btn{
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0 0.5rem;
+    border: 0.5rem solid var(--grey-color);
+}
+
+.tool-bar{
+    margin-left: 3rem;
+}
+.tool-bar .tool-select{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-bar .tool-select div{
+    width:10rem;
+    height: 12rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.tool-bar .tool-select .axe{  
+    background:url(/assets/img/axe.png) no-repeat center center;
+}
+.tool-bar .tool-select .pickaxe{  
+    background:url(/assets/img/pickaxe.png) no-repeat center center;
+}
+.tool-bar .tool-select .shovel{  
+    background:url(/assets/img/shovel.png) no-repeat center center;
+}
+.tool-bar .tool-select div:hover{
+    transform: scale(1.1);
+}
+.tool-bar .inventory-btn{
+    width: 15rem;
+    height: 15rem;
+    background: url(/assets/img/inventory.png) no-repeat center center;
+    cursor: pointer;
+}
+.tool-bar .inventory-btn:hover{
+    transform: scale(1.1);
+}
+.tool-bar .reset-btn{
+    color: var(--aqua-blue);
+    font-size: 3.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tool-bar .reset-btn:hover{
+    transform: scale(1.1);
+}
+.game-world{
+    background-color: black;
+   
+}
+.game-world div:hover{
+    border: 0.2rem solid var(--hover-color);
+}
+.game-grid{
+    width: 95%;
+    height: 90%;
+    background-color: var(--sky-color);
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.sky{
+    background-color: var(--sky-color);
+}
+.grass{
+    background: url(/assets/tiles/Grass.PNG);
+}
+.gold{
+    background:url(/assets/tiles/Gold.PNG);
+}
+.diamond{
+    background:url(/assets/tiles/diamond.jpg);
+}
+.cloud{
+    background-color: white;
+}
+.leaves{
+    background:url(/assets/tiles/Leaves.PNG);
+}
+.trunk{
+    background:url(/assets/tiles/Wood.PNG);
+}
+.soil{
+    background:url(/assets/tiles/Dirt.PNG);
+}
+.rock{
+    background:url(/assets/tiles/Stone.PNG);
+}
+
+#inventory-items{
+    position: absolute;
+    top:73%;
+    left:13%;
+    width: 55rem;
+    height: 10rem;
+    background-color: var(--dark-color);
+    border-radius: 1rem;
+    justify-content: space-around;
+}
+.inventory-item{
+    border: 0.1rem solid var(--aqua-blue);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    width:5rem;
+    height:5rem;
+    position: relative;
+}
+.count{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 35%;
+    height: 35%;
+    background-color: var(--dark-color);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.hover{
+    font-size: 1rem;
+}
+.hover{
+    border: 0.2rem solid var(--hover-onDrop-color);
+    transform: scale(1.1);
+}
+

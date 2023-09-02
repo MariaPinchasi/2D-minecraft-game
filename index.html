@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/utilities.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <script src="https://kit.fontawesome.com/a391cb5603.js" crossorigin="anonymous"></script>
+    <title>Minecraft 2D Game</title>
+</head>
+<body>
+    <section id="loading-page" class="loading-page-container flex-center-center">
+        <button id="start-btn" class="main-btn flex-center-center">Start Game <span class="arrow1"><img src="/assets/icons/right-arrow.png"></span><span class="arrow2"><img src="/assets/icons/right-arrow.png"></span><span class="arrow3"><img src="/assets/icons/right-arrow.png"></span></button>
+        <button id="instructions-btn" class="main-btn flex-center-center">Instructions <i class="fa-solid fa-book-open" style="color: #050505;"></i></button>
+        <div id="instructions" class="instructions hide">
+            <ul>
+                <li>> PICK A TOOL.</li>
+                <li>> USE THE TOOL TO TAKE OFF A TILE FROM THE SCREEN.</li>
+                <li>> PLACE THE TILE BACK IN A NEW POSITION.</li>
+                <li>> COLLECT AS MANY GOLD AND DIAMOND TILES YOU CAN.</li>
+            </ul>
+            <button class="main-btn close-btn">Close</button>
+        </div>
+    </section>
+    <section class="game-page hide">
+        <button class="main-menu-btn main-btn">Back to Menu</button>
+        <div class="tool-bar">
+            <div class="tool-select">
+                    <div class="axe">Axe</div>
+                    <div class="pickaxe">Pickaxe</div>
+                    <div class="shovel">Shovel</div>
+            </div>
+            <div class="inventory-btn"></div>
+            <div class="reset-btn">RESET</div>
+        </div>
+        <div class="game-world flex-center-center">
+            <div class="game-grid"></div>
+        </div>
+        <div id="inventory-items" class="flex-center-center hide">
+            
+        </div>
+    </section>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

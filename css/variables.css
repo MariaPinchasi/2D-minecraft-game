@@ -1,0 +1,11 @@
+/* variables */
+:root{
+    --dark-color: #000000;
+    --grey-color: #999;
+    --brown-color: rgba(44, 2, 2, 0.824);
+    --green-color:rgb(118, 201, 118);
+    --aqua-blue: aqua;
+    --sky-color: rgb(121, 218, 242);
+    --hover-color:rgb(78, 198, 227);
+    --hover-onDrop-color:  rgb(34, 142, 169);
+}
