@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm Maria PInchasi</h1>
-<h3 align="center">A passionate full stack developer from Israel</h3>
+<h1 align="center">2D Minecraft Game Project</h1>
+<h3 align="center">Hi 👋, I'm Maria PInchasi, a passionate full stack developer from Israel</h3>
 
 - 🌱 I’m currently learning **in Appleseed's full stack training program**
 - 🌱 I’m currently working **on a 2D mine-craft game written all in HTML,CSS and vanilla Java Script.**
