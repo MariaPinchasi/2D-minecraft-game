@@ -6,17 +6,17 @@
     justify-content: center;
 }
 .main-btn{
-    width: 50rem;
-    height: 10rem;
+    width: 40rem;
+    height: 7rem;
     font-family: 'Orbitron', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     transform: skew(-15deg);
     border-radius: 1rem;
     padding: 0 2rem;
     justify-content: space-between;
     background-color: var(--grey-color);
-    border: 1rem solid var(--grey-color);
+    border: 0.5rem solid var(--grey-color);
     color: var(--dark-color);
     margin-top: 3rem;
     position: relative;
