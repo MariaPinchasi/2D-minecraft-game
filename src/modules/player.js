@@ -38,10 +38,7 @@ export class Player {
     }
     addTileByType() {
         this.inventoryItems.forEach(item => {
-            const itemCount = item.querySelector('.count');
-
             item.addEventListener('dragstart', this.startDrug)
-            // }
         })
         this.gameWorldTile.forEach(tile => {
             tile.addEventListener("dragenter", this.dragEnter);
@@ -81,6 +78,7 @@ export class Player {
             const itemCount = original.querySelector('.count');
             itemCount.innerText = `${parseInt(itemCount.innerText) - 1}`;
             event.currentTarget.className = data;
+
         }
     }
 }

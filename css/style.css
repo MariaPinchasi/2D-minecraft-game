@@ -191,6 +191,7 @@
     width:4rem;
     height:4rem;
     position: relative;
+    cursor: pointer;
 }
 .count{
     position: absolute;
